@@ -9,7 +9,7 @@ const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 root.render(
     <StrictMode>
-        <App title="App"
-            message="this is App Component" />
+        <App msg="Hello App" />
     </StrictMode>,
+    document.getElementById("root")
 )
