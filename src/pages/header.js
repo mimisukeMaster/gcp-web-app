@@ -1,12 +1,9 @@
-import Head from "next/head"
-import style from "../styles/Home.module.css"
-
 export default function Header(props) {
     return (
-        <Head>
-            <title>{props.title}</title>
-            {/* <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-                    crossOrigin="anonymous"></link> */}
-        </Head>
+        <div>
+            <h1 className="bg-primary px-3 text-white display-4 text-right">
+                {props.header}
+            </h1>
+        </div>
     )
 }
