@@ -1,20 +1,19 @@
-import Head from "next/head";
-import styles from "@/styles/Home.module.css";
+import Layout from "../components/layout"
+import Link from "next/link"
 
 export default function Home() {
-    let title = "Next.js page"
-    let message = "React Next.js sample page."
-
     return (
         <div>
-            <Head>
-                <title>{title}</title>
-                <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/
-                    bootstrap/4.5.0/css/bootstrap.min.css"
-                    crossOrigin="anonymous"></link>
-            </Head>
-
-            <h1 className="bg-primary text-white display-4 ">React</h1>
+            <Layout header="Next.js" title="Top page." >
+                <div className="alert alert-primary text-center">
+                    <h5 className="mb-4">Welcome to Next.js!</h5>
+                    <Link href="./other">
+                        <button className="btn btn-primary">
+                            got to Other &gt;&gt;
+                        </button>
+                    </Link>
+                </div>
+            </Layout>
         </div>
     )
 }
